@@ -41,4 +41,25 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  position: relative;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: black;
+  width: 50%;
+}
+
+.contactInfo a {
+  color: white;
+  text-decoration: none;
+}
+
+.editIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
