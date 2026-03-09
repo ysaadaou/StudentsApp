@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+header {
+  height: 100px;
+  background-color: red;
+}
+footer {
+  height: 50px;
+  background-color: green;
+}
+main {
+  background-color: black;
+}
+
+#displayStudents {
+  background-color: white;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+.pic {
+  border-radius: 100%;
+  width: 150px;
+  height: 100px;
+}
+
+.box {
+  background-color: gray;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
