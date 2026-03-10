@@ -6,6 +6,8 @@
 
 body {
   height: 100vh;
+
+  position: relative;
 }
 header {
   height: 100px;
@@ -61,5 +63,52 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
+}
+
+.popup {
+  width: 80%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.studentInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.studentInfo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  padding: 30px;
+  font-size: 33px;
   cursor: pointer;
 }
