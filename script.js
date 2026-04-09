@@ -63,13 +63,14 @@ function render() {
     `;
 
     const editBtn = document.createElement("button");
-    editBtn.textContent = "Edit";
+    editBtn.innerHTML = '<img class="icon" src="edit.png">';
     editBtn.classList.add("editBtn");
     editBtn.addEventListener("click", () => edit(student));
     box.appendChild(editBtn);
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Supprimer";
+
+    deleteBtn.innerHTML = '<img class="icon" src="remove.png">';
     deleteBtn.classList.add("deletBtn");
     deleteBtn.addEventListener("click", () => deleteStudent(student));
     box.appendChild(deleteBtn);
@@ -80,7 +81,9 @@ function render() {
   let box = document.createElement("div");
   box.classList.add("box");
   box.innerHTML = `
-    <button class="addBtn" onclick="addStudent()">Add</button>
+    <button class="addBtn" onclick="addStudent()">
+    <img class="icon" src="add.png">
+    </button>
   `;
   displayStudents.appendChild(box);
 }

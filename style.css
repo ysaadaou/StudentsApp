@@ -7,62 +7,58 @@
 body {
   position: relative;
 }
-header {
-  height: 100px;
-  background-color: red;
-}
-footer {
-  height: 50px;
-  background-color: green;
-}
 main {
-  background-color: black;
+  padding: 15px;
 }
 
 #displayStudents {
-  background-color: white;
   overflow: scroll;
-  height: 450px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
+  gap: 15px;
 }
 
 .pic {
   border-radius: 100%;
-  width: 150px;
-  height: 100px;
+  object-fit: cover;
+  height: 200px;
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 .box {
-  background-color: gray;
   padding: 25px;
   display: flex;
-  min-height: 250px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   position: relative;
+  background-color: cadetblue;
+  border-radius: 20px;
 }
 
 .contactInfo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
   padding: 5px;
-  background-color: black;
-  width: 50%;
 }
 
 .contactInfo a {
   color: white;
   text-decoration: none;
+  display: block;
 }
 
 .editBtn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   cursor: pointer;
 }
 
@@ -72,7 +68,7 @@ main {
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -110,4 +106,8 @@ main {
   padding: 30px;
   font-size: 33px;
   cursor: pointer;
+}
+
+.icon {
+  width: 25px;
 }
